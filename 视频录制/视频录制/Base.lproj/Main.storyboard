@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2O-cc-aff">
+                                <rect key="frame" x="156.5" y="215" width="62" height="63.5"/>
+                                <state key="normal" title="开始录制"/>
+                                <connections>
+                                    <action selector="starRecorderMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2OQ-3r-Hyc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32B-Sf-DcF">
+                                <rect key="frame" x="156.5" y="318.5" width="62" height="30"/>
+                                <state key="normal" title="播放视频"/>
+                                <connections>
+                                    <action selector="playRecorderMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rh2-L9-6jX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaW-pJ-UqX">
+                                <rect key="frame" x="149" y="385" width="77" height="30"/>
+                                <state key="normal" title="保存到相册"/>
+                                <connections>
+                                    <action selector="saveTophoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tm0-Ob-yuR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="32B-Sf-DcF" firstAttribute="centerX" secondItem="m2O-cc-aff" secondAttribute="centerX" id="2EK-BA-wuq"/>
+                            <constraint firstItem="32B-Sf-DcF" firstAttribute="top" secondItem="m2O-cc-aff" secondAttribute="bottom" constant="40" id="64m-gT-316"/>
+                            <constraint firstItem="m2O-cc-aff" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="195" id="Rlv-m2-6Si"/>
+                            <constraint firstItem="m2O-cc-aff" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zc3-6W-8Yb"/>
+                            <constraint firstItem="aaW-pJ-UqX" firstAttribute="centerX" secondItem="32B-Sf-DcF" secondAttribute="centerX" id="qdz-GQ-0ag"/>
+                            <constraint firstItem="32B-Sf-DcF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uBL-vI-cr1"/>
+                            <constraint firstItem="aaW-pJ-UqX" firstAttribute="top" secondItem="32B-Sf-DcF" secondAttribute="bottom" constant="36.5" id="xvF-Z6-UUt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
